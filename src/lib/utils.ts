@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export const logout = async () => {
   try {
-    const res = await fetch("http://localhost:5000/logout", {
+    const res = await fetch("https://ecg-anomaly-detection-backend-3.onrender.com/api/logout", {
       method: "POST",
       credentials: "include",
     });
