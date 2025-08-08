@@ -64,7 +64,7 @@ function ActionsCell({
       }
 
       toast.success(`Record deleted successfully`);
-      router.push('/api/ecg_records')
+      router.push('https://ecg-anomaly-detection-backend-3.onrender.com/api/ecg_records')
        
     } catch (err) {
       console.error(err);
@@ -89,7 +89,7 @@ function ActionsCell({
           
         </DialogDescription>
         <img
-          src={`/api/${record.plot_path}`}
+          src={`https://ecg-anomaly-detection-backend-3.onrender.com/api/${record.plot_path}`}
           alt="ECG Plot"
           width={800}
           height={400}

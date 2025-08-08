@@ -138,7 +138,7 @@ export default function UpdatePatientFormPage() {
 
         if (response.ok) {
         setMessage({ text: "Patient Updated!", type: "success" });
-        setTimeout(() => router.push("/api/patients"), 1500); // redirect after delay
+        setTimeout(() => router.push("https://ecg-anomaly-detection-backend-3.onrender.com/api/patients"), 1500); // redirect after delay
         } else {
         setMessage({ text: "Update Failed!", type: "error" });
         }

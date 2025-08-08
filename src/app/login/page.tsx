@@ -30,10 +30,10 @@ export default function LoginPage() {
 
     if (res.ok) {
         if (data.is_admin===true) {
-            router.push('/admin/doctors')
+            router.push('https://ecg-anomaly-detection-backend-3.onrender.com/admin/doctors')
         } 
         if (data.is_admin==false) {
-            router.push('/patients')
+            router.push('https://ecg-anomaly-detection-backend-3.onrender.com/patients')
         } 
     } 
     else {

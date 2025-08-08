@@ -74,7 +74,7 @@ export default function NewDoctorFormPage() {
       setMessage({ text: result.error || "An error occurred", type: "error" });
     } else {
       setMessage({ text: "Doctor created successfully!", type: "success" });
-      setTimeout(() => router.push("/api/admin/doctors"), 1500);
+      setTimeout(() => router.push("https://ecg-anomaly-detection-backend-3.onrender.com/api/admin/doctors"), 1500);
       console.log(result);
       form.reset(); // reset form
     }
