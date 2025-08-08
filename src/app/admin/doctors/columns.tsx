@@ -54,7 +54,7 @@ function ActionsCell({
       else{
         toast.success(`Doctor "${doctor.name}" deleted successfully`);
         // Refresh the page or re-fetch data after deletion
-        router.push("/admin/doctors");
+        router.push("/api/admin/doctors");
       }
     } catch (err) {
       console.error(err);
@@ -62,10 +62,10 @@ function ActionsCell({
     }
   };
     const handleUpdate = () => {
-    router.push(`/admin/doctors/update/${doctor.id}`);
+    router.push(`/api/admin/doctors/update/${doctor.id}`);
     };
     const handleChangePass = () => {
-    router.push(`/admin/doctors/change-password/${doctor.id}`);
+    router.push(`/api/admin/doctors/change-password/${doctor.id}`);
     };
     
 

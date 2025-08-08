@@ -95,7 +95,7 @@ export default function AnalyzeECGClient({ patientId }: { patientId: string }) {
 
       {(prediction || loss !== null || plotPath) && (
         <div className="text-center mt-6">
-          <Button onClick={() => router.push(`/patients`)}>return</Button>
+          <Button onClick={() => router.push(`/api/patients`)}>return</Button>
         </div>
       )}
     </div>

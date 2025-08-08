@@ -115,7 +115,7 @@ export default function NewPatientFormPage() {
       setMessage({ text: result.error || "An error occurred", type: "error" });
     } else {
       setMessage({ text: "Patient created successfully!", type: "success" });
-      setTimeout(() => router.push("/patients"), 1500); // redirect after delay
+      setTimeout(() => router.push("/api/patients"), 1500); // redirect after delay
       console.log(result);
       form.reset(); // reset form
     }

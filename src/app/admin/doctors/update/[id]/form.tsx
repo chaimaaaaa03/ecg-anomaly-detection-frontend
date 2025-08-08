@@ -87,7 +87,7 @@ export default function UpdateDoctorFormPage() {
 
         if (response.ok) {
           setMessage({ text: "Doctor Updated!", type: "success" });
-          setTimeout(() => router.push("/admin/doctors"), 1500); // redirect after delay
+          setTimeout(() => router.push("/api/admin/doctors"), 1500); // redirect after delay
         } else {
           setMessage({ text: "Update Failed", type: "error" });
         }

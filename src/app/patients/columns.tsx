@@ -60,17 +60,17 @@ function ActionsCell({
 
       toast.success(`Patient "${patient.name}" deleted successfully`);
        // Refresh the page or re-fetch data after deletion
-        router.push("/patients");
+        router.push("/api/patients");
     } catch (err) {
       console.error(err);
       toast.error("An error occurred while deleting the patient");
     }
   };
     const handleUpdate = () => {
-    router.push(`/patients/update/${patient.id}`);
+    router.push(`/api/patients/update/${patient.id}`);
     };
     const handleAnalyzeSignal = () => {
-        router.push(`/patients/analyze/${patient.id}`);
+        router.push(`/api/patients/analyze/${patient.id}`);
     };
 
   return (

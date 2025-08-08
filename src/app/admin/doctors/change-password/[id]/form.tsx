@@ -53,7 +53,7 @@ export default function UpdatePassFormPage() {
 
         if (response.ok) {
           setMessage({ text: "Password Updated!", type: "success" });
-          setTimeout(() => router.push("/admin/doctors"), 1500);
+          setTimeout(() => router.push("/api/admin/doctors"), 1500);
         } else {
           setMessage({ text: "Update Failed!", type: "error" });
         }
