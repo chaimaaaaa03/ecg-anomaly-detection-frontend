@@ -46,7 +46,7 @@ function ActionsCell({
     const confirmed = window.confirm(`Are you sure you want to delete patient "${patient.name}"?`);
     if (!confirmed)  return
     
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3-b58g.onrender.com';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
     try {
       const res = await fetch(`${API_URL}/api/patients/${patient.id}`, {
         method: "DELETE",

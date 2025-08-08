@@ -95,7 +95,7 @@ export default function NewPatientFormPage() {
     phone: data.phone,
     address: data.address, // facultatif ou null
   };
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3-b58g.onrender.com';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
 
   try {
     const res = await fetch(`${API_URL}/api/patients/add`, {

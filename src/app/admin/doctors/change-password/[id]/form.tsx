@@ -39,7 +39,7 @@ export default function UpdatePassFormPage() {
     });
 
   async function onSubmit(data: z.infer<typeof newPassSchema>) {
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3-b58g.onrender.com';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
 
     
         const response = await fetch(`${API_URL}/api/admin/doctors/change-password/${id}`, {

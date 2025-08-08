@@ -14,7 +14,7 @@ export default function MePage() {
 
   useEffect(() => {
     const fetchCurrentUser = async () => {
-      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3-b58g.onrender.com';
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
       try {
         const res = await fetch(`${API_URL}/api/me`, {
           credentials: "include", 

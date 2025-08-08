@@ -44,7 +44,7 @@ export default function UpdateDoctorFormPage() {
           password: "",
       },
     });
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3-b58g.onrender.com';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
   
   // Get existing doctor data
   useEffect(() => {
