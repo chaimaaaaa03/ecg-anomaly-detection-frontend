@@ -13,7 +13,7 @@ export default function RecordsList() {
 
   useEffect(() => {
     const fetchRecords = async () => {
-      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-2.onrender.com';
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
       try {
         const res = await fetch(`${API_URL}/api/admin/ecg_records`,{
           credentials: "include"

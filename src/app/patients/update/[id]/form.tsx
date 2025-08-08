@@ -69,7 +69,7 @@ export default function UpdatePatientFormPage() {
   // Get existing patient data
   useEffect(() => {
   async function fetchData() {
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-2.onrender.com';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
     const res = await fetch(`${API_URL}/api/patients/${id}`, {
       credentials: "include",
     });
@@ -123,7 +123,7 @@ export default function UpdatePatientFormPage() {
     }
 
 
-        const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-2.onrender.com';
+        const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
         const response = await fetch(`${API_URL}/api/patients/update/${id}`, {
         method: "PUT", // ou PUT/PATCH si ton backend accepte
         headers: {

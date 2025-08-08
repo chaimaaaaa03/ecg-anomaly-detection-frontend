@@ -12,7 +12,7 @@ export default function PatientList() {
 
   useEffect(() => {
     const fetchPatients = async () => {
-      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-2.onrender.com';
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
       try {
         const res = await fetch(`${API_URL}/api/patients`, {
         credentials: "include", // Important
