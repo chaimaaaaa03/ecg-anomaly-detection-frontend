@@ -36,7 +36,7 @@ export default function AnalyzeECGClient({ patientId }: { patientId: string }) {
       const data = await res.json();
       setPrediction(data.has_anomaly ? "Anomaly" : "Normal");
       setLoss(data.loss_score);
-      setPlotPath(`https://ecg-anomaly-detection-backend-3.onrender.com/api/${data.plot_path}`);
+      setPlotPath(`https://ecg-anomaly-detection-backend-3.onrender.com/${data.plot_path}`);
     } catch (err) {
       console.error(err);
       alert("Error during analysis");
@@ -95,7 +95,7 @@ export default function AnalyzeECGClient({ patientId }: { patientId: string }) {
 
       {(prediction || loss !== null || plotPath) && (
         <div className="text-center mt-6">
-          <Button onClick={() => router.push(`https://ecg-anomaly-detection-backend-3.onrender.com/api/patients`)}>return</Button>
+          <Button onClick={() => router.push(`/patients`)}>return</Button>
         </div>
       )}
     </div>

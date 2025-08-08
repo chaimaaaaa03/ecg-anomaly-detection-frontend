@@ -63,7 +63,7 @@ function ActionsCell({
           
         </DialogDescription>
         <img
-          src={`https://ecg-anomaly-detection-backend-3.onrender.com/api/${record.plot_path}`}
+          src={`https://ecg-anomaly-detection-backend-3.onrender.com/${record.plot_path}`}
           alt="ECG Plot"
           width={800}
           height={400}

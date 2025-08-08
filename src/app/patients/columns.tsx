@@ -60,17 +60,17 @@ function ActionsCell({
 
       toast.success(`Patient "${patient.name}" deleted successfully`);
        // Refresh the page or re-fetch data after deletion
-        router.push("https://ecg-anomaly-detection-backend-3.onrender.com/api/patients");
+        router.push("/patients");
     } catch (err) {
       console.error(err);
       toast.error("An error occurred while deleting the patient");
     }
   };
     const handleUpdate = () => {
-    router.push(`https://ecg-anomaly-detection-backend-3.onrender.com/api/patients/update/${patient.id}`);
+    router.push(`/patients/update/${patient.id}`);
     };
     const handleAnalyzeSignal = () => {
-        router.push(`https://ecg-anomaly-detection-backend-3.onrender.com/api/patients/analyze/${patient.id}`);
+        router.push(`/patients/analyze/${patient.id}`);
     };
 
   return (
