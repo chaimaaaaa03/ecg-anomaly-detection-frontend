@@ -49,7 +49,7 @@ export default function NavBarPatient() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("https://ecg-anomaly-detection-backend-3.onrender.com/me", {
+        const res = await fetch("https://ecg-anomaly-detection-backend-3.onrender.com/api/me", {
           credentials: "include", // important pour les cookies
         });
         if (res.ok) {
