@@ -38,7 +38,7 @@ function ActionsCell({
 }) {
     const router = useRouter();
   const handleDelete = async () => {
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3-b58g.onrender.com';
 
 
     try {

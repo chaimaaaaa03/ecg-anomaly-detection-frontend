@@ -15,7 +15,7 @@ export const useCurrentUser = () => {
   useEffect(() => {
     const fetchCurrentUser = async () => {
       try {
-        const res = await fetch("https://ecg-anomaly-detection-backend-3.onrender.com/me", {
+        const res = await fetch("https://ecg-anomaly-detection-backend-3-b58g.onrender.com/me", {
           credentials: "include",
         });
 

@@ -22,7 +22,7 @@ export default function AnalyzeECGClient({ patientId }: { patientId: string }) {
     const formData = new FormData();
     formData.append("file", file);
     formData.append("patient_id", patientId);
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3.onrender.com';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ecg-anomaly-detection-backend-3-b58g.onrender.com';
 
     try {
       const res = await fetch(`${API_URL}/api/patients/analyze/${patientId}` , {
