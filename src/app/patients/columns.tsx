@@ -67,10 +67,10 @@ function ActionsCell({
     }
   };
     const handleUpdate = () => {
-      router.push(`/api/patients/update/${patient.id}`);
+        router.push(`/patients/update/${patient.id}`);
     };
     const handleAnalyzeSignal = () => {
-        router.push(`/api/patients/analyze/${patient.id}`);
+        router.push(`/patients/analyze/${patient.id}`);
     };
 
   return (
