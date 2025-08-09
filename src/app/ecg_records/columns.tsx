@@ -64,7 +64,7 @@ function ActionsCell({
       }
 
       toast.success(`Record deleted successfully`);
-      router.push('/ecg_records')
+      router.push('/api/ecg_records')
        
     } catch (err) {
       console.error(err);

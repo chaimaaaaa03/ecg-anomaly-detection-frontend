@@ -62,10 +62,10 @@ function ActionsCell({
     }
   };
     const handleUpdate = () => {
-    router.push(`/admin/doctors/update/${doctor.id}`);
+    router.push(`/api/admin/doctors/update/${doctor.id}`);
     };
     const handleChangePass = () => {
-    router.push(`/admin/doctors/change-password/${doctor.id}`);
+    router.push(`/api/admin/doctors/change-password/${doctor.id}`);
     };
     
 
