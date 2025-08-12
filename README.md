@@ -19,7 +19,7 @@ It provides a user-friendly interface for doctors to visualize ECG signals, dete
 
 ## 📂 Project Structure
 - `src/app/` → Application routes
-- `components/` → Reusable UI components
+- `src/components/` → Reusable UI components
 
 ---
 
